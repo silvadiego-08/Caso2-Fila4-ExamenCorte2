@@ -43,27 +43,30 @@
             // 
             this.lblNumPedido.AutoSize = true;
             this.lblNumPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumPedido.Location = new System.Drawing.Point(28, 57);
+            this.lblNumPedido.Location = new System.Drawing.Point(21, 46);
+            this.lblNumPedido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNumPedido.Name = "lblNumPedido";
-            this.lblNumPedido.Size = new System.Drawing.Size(143, 20);
+            this.lblNumPedido.Size = new System.Drawing.Size(123, 17);
             this.lblNumPedido.TabIndex = 0;
             this.lblNumPedido.Text = "Codigo de pedido:";
             // 
             // tbNumPedido
             // 
             this.tbNumPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNumPedido.Location = new System.Drawing.Point(199, 54);
+            this.tbNumPedido.Location = new System.Drawing.Point(149, 44);
+            this.tbNumPedido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbNumPedido.Name = "tbNumPedido";
-            this.tbNumPedido.Size = new System.Drawing.Size(160, 27);
+            this.tbNumPedido.Size = new System.Drawing.Size(121, 23);
             this.tbNumPedido.TabIndex = 1;
             // 
             // cbEnvioPrioritario
             // 
             this.cbEnvioPrioritario.AutoSize = true;
             this.cbEnvioPrioritario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbEnvioPrioritario.Location = new System.Drawing.Point(89, 114);
+            this.cbEnvioPrioritario.Location = new System.Drawing.Point(67, 93);
+            this.cbEnvioPrioritario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbEnvioPrioritario.Name = "cbEnvioPrioritario";
-            this.cbEnvioPrioritario.Size = new System.Drawing.Size(270, 24);
+            this.cbEnvioPrioritario.Size = new System.Drawing.Size(227, 21);
             this.cbEnvioPrioritario.TabIndex = 3;
             this.cbEnvioPrioritario.Text = "Registrar como Envío Prioritario";
             this.cbEnvioPrioritario.UseVisualStyleBackColor = true;
@@ -71,9 +74,10 @@
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(172, 167);
+            this.btnAgregar.Location = new System.Drawing.Point(129, 136);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(126, 44);
+            this.btnAgregar.Size = new System.Drawing.Size(94, 36);
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -82,28 +86,29 @@
             // lbPrioritario
             // 
             this.lbPrioritario.FormattingEnabled = true;
-            this.lbPrioritario.ItemHeight = 16;
-            this.lbPrioritario.Location = new System.Drawing.Point(70, 264);
+            this.lbPrioritario.Location = new System.Drawing.Point(52, 214);
+            this.lbPrioritario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lbPrioritario.Name = "lbPrioritario";
-            this.lbPrioritario.Size = new System.Drawing.Size(134, 148);
+            this.lbPrioritario.Size = new System.Drawing.Size(102, 121);
             this.lbPrioritario.TabIndex = 5;
             // 
             // lbRegular
             // 
             this.lbRegular.FormattingEnabled = true;
-            this.lbRegular.ItemHeight = 16;
-            this.lbRegular.Location = new System.Drawing.Point(267, 264);
+            this.lbRegular.Location = new System.Drawing.Point(200, 214);
+            this.lbRegular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lbRegular.Name = "lbRegular";
-            this.lbRegular.Size = new System.Drawing.Size(136, 148);
+            this.lbRegular.Size = new System.Drawing.Size(103, 121);
             this.lbRegular.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(85, 236);
+            this.label2.Location = new System.Drawing.Point(64, 192);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 20);
+            this.label2.Size = new System.Drawing.Size(80, 17);
             this.label2.TabIndex = 7;
             this.label2.Text = "Prioritario";
             // 
@@ -111,27 +116,30 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(299, 236);
+            this.label3.Location = new System.Drawing.Point(224, 192);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 20);
+            this.label3.Size = new System.Drawing.Size(65, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "Regular";
             // 
             // btnDespachar
             // 
             this.btnDespachar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDespachar.Location = new System.Drawing.Point(172, 434);
+            this.btnDespachar.Location = new System.Drawing.Point(129, 353);
+            this.btnDespachar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDespachar.Name = "btnDespachar";
-            this.btnDespachar.Size = new System.Drawing.Size(126, 44);
+            this.btnDespachar.Size = new System.Drawing.Size(94, 36);
             this.btnDespachar.TabIndex = 9;
             this.btnDespachar.Text = "Despachar";
             this.btnDespachar.UseVisualStyleBackColor = true;
+            this.btnDespachar.Click += new System.EventHandler(this.btnDespachar_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 499);
+            this.ClientSize = new System.Drawing.Size(375, 405);
             this.Controls.Add(this.btnDespachar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -141,6 +149,7 @@
             this.Controls.Add(this.cbEnvioPrioritario);
             this.Controls.Add(this.tbNumPedido);
             this.Controls.Add(this.lblNumPedido);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Sistema de Mensajería";
             this.ResumeLayout(false);

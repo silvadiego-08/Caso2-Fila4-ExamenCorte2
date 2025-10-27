@@ -64,5 +64,30 @@ namespace Sistema_de_Mensajeria
                 lbRegular.Items.Add(item);
             }
         }
+
+        private void btnDespachar_Click(object sender, EventArgs e)
+        {
+            string pedidoDespachado = "";
+
+
+            if (EnvioPrioritario.Count > 0)
+            {
+                pedidoDespachado = EnvioPrioritario.Pop();
+                lbPrioritario.Items.Remove(pedidoDespachado);
+                MessageBox.Show($"¡Despachando Prioritario! (PILA): {pedidoDespachado}", "Despacho", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            else if (EnvioRegular.Count > 0)
+            {
+                pedidoDespachado = EnvioRegular.Dequeue();
+                lbRegular.Items.Remove(pedidoDespachado);
+                MessageBox.Show($"Despachando Regular (COLA): {pedidoDespachado}", "Despacho", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            else
+            {
+                MessageBox.Show("No hay pedidos pendientes para despachar.", "Estado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
