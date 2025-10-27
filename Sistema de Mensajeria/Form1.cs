@@ -12,6 +12,7 @@ namespace Sistema_de_Mensajeria
 {
     public partial class Form1 : Form
     {
+        Queue<string> EnvioRegular = new Queue<string>();
         Stack<string> EnvioPrioritario = new Stack<string>();
         public Form1()
         {
@@ -40,9 +41,9 @@ namespace Sistema_de_Mensajeria
                 else
                 {
                     // Agregar el pedido regular al final de la pila
-                    lbRegular.Items.Add(tbNumPedido.Text);
+                    EnvioRegular.Enqueue(tbNumPedido.Text);
                     tbNumPedido.Clear();
-                    ActualizarListaPila();
+                    ActualizarCola();
                     return;
                 }
             }
@@ -53,6 +54,14 @@ namespace Sistema_de_Mensajeria
             foreach (var item in EnvioPrioritario)
             {
                 lbPrioritario.Items.Add(item);
+            }
+        }
+        private void ActualizarCola()
+        {
+            lbRegular.Items.Clear();
+            foreach (var item in EnvioRegular)
+            {
+                lbRegular.Items.Add(item);
             }
         }
     }
