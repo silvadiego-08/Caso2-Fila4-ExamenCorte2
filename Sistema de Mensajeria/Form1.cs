@@ -21,21 +21,33 @@ namespace Sistema_de_Mensajeria
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-           string pedido = tbNumPedido.Text.Trim();
+            string pedido = tbNumPedido.Text.Trim();
 
-            if (pedido == "")
+            if (string.IsNullOrWhiteSpace(tbNumPedido.Text))
             {
-                MessageBox.Show("Ingrese el número de pedido.");
+                MessageBox.Show("Ingrese el número de pedido.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
-            // Apilar el pedido prioritario
-            EnvioPrioritario.Push(pedido);
-
-            tbNumPedido.Clear();
-            ActualizarListaPila();
+            else
+            {
+                if (cbEnvioPrioritario.Checked)
+                {
+                    // Apilar el pedido prioritario
+                    EnvioPrioritario.Push(pedido);
+                    tbNumPedido.Clear();
+                    ActualizarListaPila();
+                    return;
+                }
+                else
+                {
+                    // Agregar el pedido regular al final de la pila
+                    lbRegular.Items.Add(pedido);
+                    tbNumPedido.Clear();
+                    ActualizarListaPila();
+                    return;
+                }
+            }
         }
-
         private void ActualizarListaPila()
         {
             lbPrioritario.Items.Clear();

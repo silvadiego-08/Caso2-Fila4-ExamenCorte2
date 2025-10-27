@@ -43,11 +43,11 @@
             // 
             this.lblNumPedido.AutoSize = true;
             this.lblNumPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumPedido.Location = new System.Drawing.Point(43, 57);
+            this.lblNumPedido.Location = new System.Drawing.Point(28, 57);
             this.lblNumPedido.Name = "lblNumPedido";
-            this.lblNumPedido.Size = new System.Drawing.Size(150, 20);
+            this.lblNumPedido.Size = new System.Drawing.Size(143, 20);
             this.lblNumPedido.TabIndex = 0;
-            this.lblNumPedido.Text = "Número de pedido:";
+            this.lblNumPedido.Text = "Codigo de pedido:";
             // 
             // tbNumPedido
             // 
