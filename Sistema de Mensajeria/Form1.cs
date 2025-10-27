@@ -16,12 +16,11 @@ namespace Sistema_de_Mensajeria
         public Form1()
         {
             InitializeComponent();
-            btnAgregar.Click += btnAgregar_Click;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            string pedido = tbNumPedido.Text.Trim();
+            
 
             if (string.IsNullOrWhiteSpace(tbNumPedido.Text))
             {
@@ -33,7 +32,7 @@ namespace Sistema_de_Mensajeria
                 if (cbEnvioPrioritario.Checked)
                 {
                     // Apilar el pedido prioritario
-                    EnvioPrioritario.Push(pedido);
+                    EnvioPrioritario.Push(tbNumPedido.Text);
                     tbNumPedido.Clear();
                     ActualizarListaPila();
                     return;
@@ -41,7 +40,7 @@ namespace Sistema_de_Mensajeria
                 else
                 {
                     // Agregar el pedido regular al final de la pila
-                    lbRegular.Items.Add(pedido);
+                    lbRegular.Items.Add(tbNumPedido.Text);
                     tbNumPedido.Clear();
                     ActualizarListaPila();
                     return;
