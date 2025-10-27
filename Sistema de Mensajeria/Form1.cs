@@ -12,9 +12,15 @@ namespace Sistema_de_Mensajeria
 {
     public partial class Form1 : Form
     {
+        Stack<string> EnvioPrioritario = new Stack<string>();
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
