@@ -12,7 +12,9 @@ namespace Sistema_de_Mensajeria
 {
     public partial class Form1 : Form
     {
+        //Se agrega la cola para los envios regulares
         Queue<string> EnvioRegular = new Queue<string>();
+
         Stack<string> EnvioPrioritario = new Stack<string>();
         public Form1()
         {
