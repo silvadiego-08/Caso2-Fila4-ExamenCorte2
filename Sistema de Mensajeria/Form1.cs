@@ -16,11 +16,33 @@ namespace Sistema_de_Mensajeria
         public Form1()
         {
             InitializeComponent();
+            btnAgregar.Click += btnAgregar_Click;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+           string pedido = tbNumPedido.Text.Trim();
 
+            if (pedido == "")
+            {
+                MessageBox.Show("Ingrese el número de pedido.");
+                return;
+            }
+
+            // Apilar el pedido prioritario
+            EnvioPrioritario.Push(pedido);
+
+            tbNumPedido.Clear();
+            ActualizarListaPila();
+        }
+
+        private void ActualizarListaPila()
+        {
+            lbPrioritario.Items.Clear();
+            foreach (var item in EnvioPrioritario)
+            {
+                lbPrioritario.Items.Add(item);
+            }
         }
     }
 }
