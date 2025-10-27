@@ -1,0 +1,11 @@
+C:\Users\LENOVO\source\repos\EmpresaMensajeria\EmpresaMensajeria\bin\Debug\EmpresaMensajeria.exe.config
+C:\Users\LENOVO\source\repos\EmpresaMensajeria\EmpresaMensajeria\bin\Debug\EmpresaMensajeria.exe
+C:\Users\LENOVO\source\repos\EmpresaMensajeria\EmpresaMensajeria\bin\Debug\EmpresaMensajeria.pdb
+C:\Users\LENOVO\source\repos\EmpresaMensajeria\EmpresaMensajeria\obj\Debug\EmpresaMensajeria.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\EmpresaMensajeria\EmpresaMensajeria\obj\Debug\EmpresaMensajeria.Form1.resources
+C:\Users\LENOVO\source\repos\EmpresaMensajeria\EmpresaMensajeria\obj\Debug\EmpresaMensajeria.Properties.Resources.resources
+C:\Users\LENOVO\source\repos\EmpresaMensajeria\EmpresaMensajeria\obj\Debug\EmpresaMensajeria.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\EmpresaMensajeria\EmpresaMensajeria\obj\Debug\EmpresaMensajeria.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\EmpresaMensajeria\EmpresaMensajeria\obj\Debug\EmpresaMensajeria.exe
+C:\Users\LENOVO\source\repos\EmpresaMensajeria\EmpresaMensajeria\obj\Debug\EmpresaMensajeria.pdb
+C:\Users\LENOVO\source\repos\EmpresaMensajeria\EmpresaMensajeria\obj\Debug\EmpresaMensajeria.exe.config
